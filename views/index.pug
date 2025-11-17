@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  if userId
+    p You are logged in!
+    a(href="/movies/add") Add a Movie
+    br
+    a(href="/logout") Logout
+  else
+    p Welcome! Please log in or register below.
+    a(href="/login") Login
+    br
+    a(href="/register") Register

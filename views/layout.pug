@@ -6,10 +6,13 @@ html
     nav
       a(href="/") Home
       |  |  
-      a(href="/register") Register
-      |  |  
-      a(href="/login") Login
-      |  |  
-      a(href="/logout") Logout
+      if !userId
+        a(href="/register") Register
+        |  |  
+        a(href="/login") Login
+      else
+        a(href="/movies/add") Add Movie
+        |  |  
+        a(href="/logout") Logout
     hr
     block content

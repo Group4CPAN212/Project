@@ -30,6 +30,13 @@ app.use(session({
     saveUninitialized: false
 }));
 
+// Make session info available to all Pug templates
+app.use((req, res, next) => {
+    res.locals.userId = req.session.userId;
+    next();
+});
+
+
 // Routes
 app.use('/movies', movieRoutes);  // Movie routes
 app.use('/', userRoutes);         // User routes (register, login, logout)
