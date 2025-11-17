@@ -53,3 +53,10 @@ router.post('/edit/:id', async (req, res) => {
     });
     res.redirect('/movies/' + req.params.id);
 });
+
+// Handle deletion
+router.post('/delete/:id', async (req, res) => {
+    await Movie.findByIdAndDelete(req.params.id);
+    res.redirect('/');
+});
+
