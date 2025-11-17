@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 Add a Movie
+  form(action="/movies/add" method="POST")
+    label Name:
+    input(type="text" name="name")
+    br
+    label Description:
+    textarea(name="description")
+    br
+    label Year:
+    input(type="number" name="year")
+    br
+    label Genres (comma separated):
+    input(type="text" name="genres")
+    br
+    label Rating:
+    input(type="number" name="rating" step="0.1" min="0" max="10")
+    br
+    button(type="submit") Submit
