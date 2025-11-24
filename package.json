@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "start": "node ./app.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
