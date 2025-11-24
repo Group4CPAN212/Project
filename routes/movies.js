@@ -14,7 +14,7 @@ function isLoggedIn(req, res, next) {
 
 // Show Add Movie form (restricted)
 router.get('/add', isLoggedIn, (req, res) => {
-    res.render('add_movie');
+    res.render('add_movie', { text: "hello" }); // test passing info
 });
 
 // Handle form submission (restricted)

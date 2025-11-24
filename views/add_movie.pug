@@ -16,6 +16,8 @@ block content
     input(type="text" name="genres")
     br
     label Rating:
-    input(type="number" name="rating" step="0.5" min="0" max="10")
-    br
+    select(name="rating")
+      option(value="" selected disabled) Select a rating
+        each val in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          option(value=val)= val
     button(type="submit") Submit
