@@ -3,21 +3,23 @@ html
   head
     title Movie App
     link(rel="stylesheet" href="/css/style.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
   body
     header
-      h1 Project By Owen Imudia, Aareez Khan and Jerome Mingala
-    nav
-      a(href="/") Home
-      | |
-      a(href="/movies/") List of Movies
-      | |
-      if !userId
-        a(href="/register") Register
-        | |
-        a(href="/login") Login
-      else
-        a(href="/movies/add") Add Movie
-        | |
-        a(href="/logout") Logout
+      .container
+        h1 Movie Database
+        nav
+          a(href="/") Home
+          if !userId
+            a(href="/register") Register
+            a(href="/login") Login
+          else
+            a(href="/movies/add") Add Movie
+            a(href="/logout") Logout
+          a(href="/movies/") All Movies
     main
-      block content
+      .container
+        block content
+    footer
+      .container
+        p Project By Owen Imudia, Aareez Khan and Jerome Mingala

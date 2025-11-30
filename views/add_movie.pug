@@ -2,22 +2,30 @@ extends layout
 
 block content
   h1 Add a Movie
+
+  if errors
+    .error-box
+      ul
+        each err in errors
+          li= err
+
   form(action="/movies/add" method="POST")
     label Name:
-    input(type="text" name="name")
-    br
+    input(type="text" name="name" value=name)
+
     label Description:
-    textarea(name="description")
-    br
+    textarea(name="description")= description
+
     label Year:
-    input(type="number" name="year")
-    br
+    input(type="number" name="year" value=year)
+
     label Genres (comma separated):
-    input(type="text" name="genres")
-    br
+    input(type="text" name="genres" value=genres)
+
     label Rating:
     select(name="rating")
-      option(value="" selected disabled) Select a rating
-        each val in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-          option(value=val)= val
+      option(value="" disabled selected=(!rating)) Select a rating
+      each val in [0,1,2,3,4,5,6,7,8,9,10]
+        option(value=val selected=(val==rating))= val
+
     button(type="submit") Submit

@@ -13,7 +13,6 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-
 // Registration route (POST)
 router.post('/register', async (req, res) => {
     const { username, password, password2 } = req.body;
@@ -25,11 +24,11 @@ router.post('/register', async (req, res) => {
     if (errors.length > 0) return res.render('register', { errors });
 
     try {
-        const user = new User({ username, password });
-        await user.save();
-        res.redirect('/login');
+      const user = new User({ username, password });
+      await user.save();
+      res.render('login', { success: "Registration successful! Please log in." });
     } catch (err) {
-        res.send("Error registering user: " + err.message);
+      res.render('register', { errors: ["Username already taken"] });
     }
 });
 
@@ -50,5 +49,7 @@ router.get('/logout', (req, res) => {
     req.session.destroy();
     res.redirect('/');
 });
+
+
 
 module.exports = router;

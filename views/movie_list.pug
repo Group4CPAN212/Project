@@ -1,10 +1,18 @@
 extends layout
 
 block content
-  h1 Movies
-  each movie in movies
-    .movie-card
-      h2 #{movie.name} (#{movie.year})
-      p Rating: #{movie.rating}/10
-      p Genres: #{movie.genres.join(', ')}
-      a(href="/movies/" + movie._id) View Details
+  h1 Movie Collection
+  if movies.length > 0
+    each movie in movies
+      .movie-card
+        h2 #{movie.name} (#{movie.year})
+        p Rating: #{movie.rating}/10
+        p Genres: #{movie.genres.join(', ')}
+        a.btn(href="/movies/" + movie._id) View Details
+  else
+    .error-box(style="text-align: center;")
+      p No movies found. 
+      if userId
+        a.btn(href="/movies/add") Add the first movie!
+      else
+        a.btn(href="/register") Register to add movies!

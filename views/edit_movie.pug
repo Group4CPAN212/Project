@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1 Edit Movie
+
+  if errors
+    .error-box
+      ul
+        each err in errors
+          li= err
+
+  form(action="/movies/edit/" + movie._id method="POST")
+    label Name:
+    input(type="text" name="name" value=movie.name)
+
+    label Description:
+    textarea(name="description")= movie.description
+
+    label Year:
+    input(type="number" name="year" value=movie.year)
+
+    label Genres (comma separated):
+    input(type="text" name="genres" value=movie.genres.join(', '))
+
+    label Rating:
+    select(name="rating")
+      each val in [0,1,2,3,4,5,6,7,8,9,10]
+        option(value=val selected=(val==movie.rating))= val
+
+    button(type="submit") Save Changes

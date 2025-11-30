@@ -2,18 +2,21 @@ extends layout
 
 block content
   h1 Register
+
   if errors
-    ul
-      each err in errors
-        li= err
+    .error-box
+      ul
+        each err in errors
+          li= err
+
   form(action="/register" method="POST")
     label Username:
     input(type="text" name="username")
-    br
+
     label Password:
     input(type="password" name="password")
-    br
+
     label Confirm Password:
     input(type="password" name="password2")
-    br
+
     button(type="submit") Register
