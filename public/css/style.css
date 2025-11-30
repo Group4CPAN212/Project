@@ -1,9 +1,10 @@
 :root {
-  --amethyst: #3A015C;
-  --smart-blue: #576CA8;
-  --white-smoke: #F5F3F5;
-  --watermelon: #ED254E;
-  --midnight: #11001C;
+    --amethyst: #001d6e;
+    --smart-blue: #576CA8;
+    --smart-blue2: #2d30c7;
+    --white-smoke: #F5F3F5;
+    --watermelon: #00c3ff;
+    --midnight: #05004e;
 }
 
 * {
@@ -65,13 +66,20 @@ nav a:hover {
   background: var(--watermelon);
   color: var(--white-smoke);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(237, 37, 78, 0.3);
+  box-shadow: 0 4px 8px rgba(41, 3, 255, 0.3);
 }
 
 /* Main Content */
 main {
   flex: 1;
   padding: 2rem 0;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--white-smoke);
+    text-align: center;
 }
 
 /* Form Styles */
@@ -107,13 +115,13 @@ form input, form textarea, form select {
 
 form input:focus, form textarea:focus, form select:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(237, 37, 78, 0.3);
+  box-shadow: 0 0 0 3px rgba(50, 37, 237, 0.3);
   transform: scale(1.02);
 }
 
 /* Button Styles */
 button, .btn {
-  background: var(--watermelon);
+  background: var(--smart-blue2);
   color: var(--white-smoke);
   padding: 12px 30px;
   border: none;
@@ -125,13 +133,13 @@ button, .btn {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(237, 37, 78, 0.3);
+  box-shadow: 0 4px 15px rgba(40, 37, 237, 0.3);
 }
 
 button:hover, .btn:hover {
-  background: #ff2e5e;
+  background: var(--watermelon);
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(237, 37, 78, 0.4);
+  box-shadow: 0 6px 20px rgba(40, 37, 237, 0.4);
 }
 
 /* Message Boxes */
@@ -240,7 +248,7 @@ h1 {
 .home-links a:hover {
   background: var(--watermelon);
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(237, 37, 78, 0.3);
+  box-shadow: 0 6px 20px rgba(67, 37, 237, 0.3);
 }
 
 /* Footer */
