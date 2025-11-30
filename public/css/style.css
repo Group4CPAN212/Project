@@ -8,71 +8,71 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, var(--midnight) 0%, #1a0033 100%);
-  color: var(--white-smoke);
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--midnight) 0%, #1a0033 100%);
+    color: var(--white-smoke);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Header Styles */
 header {
-  background: var(--amethyst);
-  padding: 1rem 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-bottom: 3px solid var(--watermelon);
+    background: var(--amethyst);
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid var(--watermelon);
 }
 
 header h1 {
-  color: var(--white-smoke);
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--white-smoke);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav {
-  text-align: center;
-  padding: 0.5rem 0;
+    text-align: center;
+    padding: 0.5rem 0;
 }
 
 nav a {
-  color: var(--white-smoke);
-  text-decoration: none;
-  margin: 0 15px;
-  padding: 8px 16px;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  border: 2px solid transparent;
+    color: var(--white-smoke);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border: 2px solid transparent;
 }
 
 nav a:hover {
-  background: var(--watermelon);
-  color: var(--white-smoke);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(41, 3, 255, 0.3);
+    background: var(--watermelon);
+    color: var(--white-smoke);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(41, 3, 255, 0.3);
 }
 
 /* Main Content */
 main {
-  flex: 1;
-  padding: 2rem 0;
+    flex: 1;
+    padding: 2rem 0;
 }
 
 .lead {
@@ -84,206 +84,225 @@ main {
 
 /* Form Styles */
 form {
-  background: var(--smart-blue);
-  padding: 2rem;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 500px;
-  margin: 2rem auto;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(245, 243, 245, 0.1);
+    background: var(--smart-blue);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(245, 243, 245, 0.1);
 }
 
 form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--white-smoke);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--white-smoke);
 }
 
-form input, form textarea, form select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 1.5rem;
-  border: none;
-  border-radius: 8px;
-  background: rgba(245, 243, 245, 0.95);
-  color: var(--midnight);
-  font-size: 1rem;
-  transition: all 0.3s ease;
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(245, 243, 245, 0.95);
+    color: var(--midnight);
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
-form input:focus, form textarea:focus, form select:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(50, 37, 237, 0.3);
-  transform: scale(1.02);
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(50, 37, 237, 0.3);
+    transform: scale(1.02);
 }
 
 /* Button Styles */
-button, .btn {
-  background: var(--smart-blue2);
-  color: var(--white-smoke);
-  padding: 12px 30px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(40, 37, 237, 0.3);
+button,
+.btn {
+    background: var(--smart-blue2);
+    color: var(--white-smoke);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(40, 37, 237, 0.3);
 }
 
-button:hover, .btn:hover {
-  background: var(--watermelon);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(40, 37, 237, 0.4);
+/* Red Delete Button */
+button.delete {
+    background: rgba(255, 23, 23, 1);
+}
+
+form.delete {
+    display: contents;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+button:hover,
+.btn:hover {
+    background: var(--watermelon);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(40, 37, 237, 0.4);
 }
 
 /* Message Boxes */
 .error-box {
-  background: rgba(237, 37, 78, 0.15);
-  color: var(--white-smoke);
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 1.5rem auto;
-  border-left: 5px solid var(--watermelon);
-  max-width: 500px;
+    background: rgba(237, 37, 78, 0.15);
+    color: var(--white-smoke);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    border-left: 5px solid var(--watermelon);
+    max-width: 500px;
 }
 
 .error-box ul {
-  list-style: none;
-  margin-left: 1rem;
+    list-style: none;
+    margin-left: 1rem;
 }
 
 .error-box li {
-  margin: 0.5rem 0;
-  padding-left: 1rem;
-  border-left: 2px solid var(--watermelon);
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--watermelon);
 }
 
 .success-box {
-  background: rgba(87, 108, 168, 0.3);
-  color: var(--white-smoke);
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 1.5rem auto;
-  border-left: 5px solid var(--smart-blue);
-  max-width: 500px;
-  text-align: center;
+    background: rgba(87, 108, 168, 0.3);
+    color: var(--white-smoke);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    border-left: 5px solid var(--smart-blue);
+    max-width: 500px;
+    text-align: center;
 }
 
 /* Movie Cards */
 .movie-card {
-  background: var(--smart-blue);
-  padding: 1.5rem;
-  border-radius: 15px;
-  margin: 1.5rem auto;
-  width: 90%;
-  max-width: 800px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  border: 2px solid rgba(245, 243, 245, 0.1);
+    background: var(--smart-blue);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(245, 243, 245, 0.1);
 }
 
 .movie-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .movie-card h2 {
-  color: var(--white-smoke);
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  border-bottom: 2px solid var(--watermelon);
-  padding-bottom: 0.5rem;
+    color: var(--white-smoke);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--watermelon);
+    padding-bottom: 0.5rem;
 }
 
 .movie-card p {
-  margin: 0.5rem 0;
-  color: var(--white-smoke);
+    margin: 0.5rem 0;
+    color: var(--white-smoke);
 }
 
 .movie-card .actions {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(245, 243, 245, 0.2);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(245, 243, 245, 0.2);
 }
 
-.movie-card .actions a, .movie-card .actions button {
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
+.movie-card .actions a,
+.movie-card .actions button {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Home Page Styles */
 h1 {
-  text-align: center;
-  color: var(--white-smoke);
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: var(--white-smoke);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .home-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .home-links a {
-  background: var(--smart-blue);
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  text-decoration: none;
-  color: var(--white-smoke);
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
+    background: var(--smart-blue);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white-smoke);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .home-links a:hover {
-  background: var(--watermelon);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(67, 37, 237, 0.3);
+    background: var(--watermelon);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(67, 37, 237, 0.3);
 }
 
 /* Footer */
 footer {
-  background: var(--amethyst);
-  color: var(--white-smoke);
-  text-align: center;
-  padding: 1.5rem 0;
-  margin-top: auto;
-  border-top: 3px solid var(--watermelon);
+    background: var(--amethyst);
+    color: var(--white-smoke);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    border-top: 3px solid var(--watermelon);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .container {
-    width: 95%;
-    padding: 0 10px;
-  }
-  
-  form {
-    margin: 1rem auto;
-    padding: 1.5rem;
-  }
-  
-  .movie-card {
-    width: 95%;
-    padding: 1rem;
-  }
-  
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
-  
-  header h1 {
-    font-size: 1.5rem;
-  }
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    form {
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+
+    .movie-card {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
