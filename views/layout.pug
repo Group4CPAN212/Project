@@ -2,19 +2,22 @@ doctype html
 html
   head
     title Movie App
+    link(rel="stylesheet" href="/css/style.css")
   body
-    h1 Project By Owen Imudia, Aareez Khan and Jerome Mingala
-    |
+    header
+      h1 Project By Owen Imudia, Aareez Khan and Jerome Mingala
     nav
       a(href="/") Home
-      |  |  
+      | |
+      a(href="/movies/") List of Movies
+      | |
       if !userId
         a(href="/register") Register
-        |  |  
+        | |
         a(href="/login") Login
       else
         a(href="/movies/add") Add Movie
-        |  |  
+        | |
         a(href="/logout") Logout
-    hr
-    block content
+    main
+      block content
